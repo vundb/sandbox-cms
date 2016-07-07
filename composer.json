@@ -1,0 +1,29 @@
+{
+    "name": "nobik/sandbox-cms",
+    "license": "MIT",
+    "description": "Playing around with different cms systems.",
+    "authors": [
+        {
+            "name": "Viktor Breitenbuecher",
+            "email": "vic.b@outlook.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "vundb/ansible-role-system-bootstrap": "1.0.*",
+        "vundb/ansible-role-system-hostname": "1.0.*",
+        "vundb/ansible-role-system-timezone": "1.0.*",
+        "vundb/ansible-role-apache": "1.0.*",
+        "vundb/ansible-role-apache-vhost": "1.0.*",
+        "vundb/ansible-role-php": "1.1.*",
+        "vundb/ansible-role-mysql": "1.0.*",
+        "vundb/ansible-role-mysql-admin": "1.0.*"
+    },
+    "extra": {
+        "installer-paths": {
+            "ansible-roles/{$name}": [
+                "type:chef-role"
+            ]
+        }
+    }
+}

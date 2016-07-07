@@ -1,0 +1,433 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "7166b25fbcf7453f9912ad584177de9e",
+    "content-hash": "636d368df73e64f1e3d2381695ebf895",
+    "packages": [],
+    "packages-dev": [
+        {
+            "name": "composer/installers",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/installers.git",
+                "reference": "a3595c5272a6f247228abb20076ed27321e4aae9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/installers/zipball/a3595c5272a6f247228abb20076ed27321e4aae9",
+                "reference": "a3595c5272a6f247228abb20076ed27321e4aae9",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0"
+            },
+            "replace": {
+                "roundcube/plugin-installer": "*",
+                "shama/baton": "*"
+            },
+            "require-dev": {
+                "composer/composer": "1.0.*@dev",
+                "phpunit/phpunit": "4.1.*"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Composer\\Installers\\Plugin",
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Composer\\Installers\\": "src/Composer/Installers"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kyle Robinson Young",
+                    "email": "kyle@dontkry.com",
+                    "homepage": "https://github.com/shama"
+                }
+            ],
+            "description": "A multi-framework Composer library installer",
+            "homepage": "https://composer.github.io/installers/",
+            "keywords": [
+                "Craft",
+                "Dolibarr",
+                "Hurad",
+                "ImageCMS",
+                "MODX Evo",
+                "Mautic",
+                "OXID",
+                "RadPHP",
+                "SMF",
+                "Thelia",
+                "WolfCMS",
+                "agl",
+                "aimeos",
+                "annotatecms",
+                "bitrix",
+                "cakephp",
+                "chef",
+                "codeigniter",
+                "concrete5",
+                "croogo",
+                "dokuwiki",
+                "drupal",
+                "elgg",
+                "expressionengine",
+                "fuelphp",
+                "grav",
+                "installer",
+                "joomla",
+                "kohana",
+                "laravel",
+                "lithium",
+                "magento",
+                "mako",
+                "mediawiki",
+                "modulework",
+                "moodle",
+                "phpbb",
+                "piwik",
+                "ppi",
+                "puppet",
+                "roundcube",
+                "shopware",
+                "silverstripe",
+                "symfony",
+                "typo3",
+                "wordpress",
+                "zend",
+                "zikula"
+            ],
+            "time": "2016-07-05 06:18:20"
+        },
+        {
+            "name": "vundb/ansible-role-apache",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vundb/ansible-role-apache.git",
+                "reference": "17f71aaac4223c815a178cecb4fd2cb6dfe49488"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vundb/ansible-role-apache/zipball/17f71aaac4223c815a178cecb4fd2cb6dfe49488",
+                "reference": "17f71aaac4223c815a178cecb4fd2cb6dfe49488",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "chef-role",
+            "extra": {
+                "installer-name": "apache"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Viktor Breitenbuecher",
+                    "email": "vic.b@outlook.com"
+                }
+            ],
+            "description": "Ansible role to install and configure apache on gentoo instances.",
+            "time": "2016-06-28 20:34:58"
+        },
+        {
+            "name": "vundb/ansible-role-apache-vhost",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vundb/ansible-role-apache-vhost.git",
+                "reference": "91394384674775522165b35f22d2c4d1d9c17e24"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vundb/ansible-role-apache-vhost/zipball/91394384674775522165b35f22d2c4d1d9c17e24",
+                "reference": "91394384674775522165b35f22d2c4d1d9c17e24",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "chef-role",
+            "extra": {
+                "installer-name": "apache-vhost"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Viktor Breitenbuecher",
+                    "email": "vic.b@outlook.com"
+                }
+            ],
+            "description": "Ansible role to manage apache's virtual hosts on gentoo instances.",
+            "time": "2016-07-03 10:02:48"
+        },
+        {
+            "name": "vundb/ansible-role-mysql",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vundb/ansible-role-mysql.git",
+                "reference": "266cdd00df0031386a9c605078f2111b9670b240"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vundb/ansible-role-mysql/zipball/266cdd00df0031386a9c605078f2111b9670b240",
+                "reference": "266cdd00df0031386a9c605078f2111b9670b240",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "chef-role",
+            "extra": {
+                "installer-name": "mysql"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Viktor Breitenbuecher",
+                    "email": "vic.b@outlook.com"
+                }
+            ],
+            "description": "Ansible role to install and configure mysql service on gentoo instances.",
+            "time": "2016-07-02 22:52:10"
+        },
+        {
+            "name": "vundb/ansible-role-mysql-admin",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vundb/ansible-role-mysql-admin.git",
+                "reference": "7e63dcc5a4a3a3e15d2e4961fb8ac5c35238296a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vundb/ansible-role-mysql-admin/zipball/7e63dcc5a4a3a3e15d2e4961fb8ac5c35238296a",
+                "reference": "7e63dcc5a4a3a3e15d2e4961fb8ac5c35238296a",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "chef-role",
+            "extra": {
+                "installer-name": "mysql-admin"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Viktor Breitenbuecher",
+                    "email": "vic.b@outlook.com"
+                }
+            ],
+            "description": "Ansible role to administrate mysql instances on gentoo instances.",
+            "time": "2016-07-03 08:43:19"
+        },
+        {
+            "name": "vundb/ansible-role-php",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vundb/ansible-role-php.git",
+                "reference": "808bcc70f16ce62476a1bfc2840aa87444067dfc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vundb/ansible-role-php/zipball/808bcc70f16ce62476a1bfc2840aa87444067dfc",
+                "reference": "808bcc70f16ce62476a1bfc2840aa87444067dfc",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "vundb/ansible-role-portage": "1.0.*"
+            },
+            "type": "chef-role",
+            "extra": {
+                "installer-name": "php",
+                "installer-paths": {
+                    "vendor/ansible-roles/{$name}": [
+                        "type:chef-role"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Viktor Breitenbuecher",
+                    "email": "vic.b@outlook.com"
+                }
+            ],
+            "description": "Ansible role to install and configure php on gentoo instances.",
+            "time": "2016-07-05 20:34:46"
+        },
+        {
+            "name": "vundb/ansible-role-portage",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vundb/ansible-role-portage.git",
+                "reference": "903239bcf4485e8d4ace8a34c5dde6ac027a743d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vundb/ansible-role-portage/zipball/903239bcf4485e8d4ace8a34c5dde6ac027a743d",
+                "reference": "903239bcf4485e8d4ace8a34c5dde6ac027a743d",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "chef-role",
+            "extra": {
+                "installer-name": "portage"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Viktor Breitenbuecher",
+                    "email": "vic.b@outlook.com"
+                }
+            ],
+            "description": "Ansible role handle portage configuration and package installation on gentoo instances.",
+            "time": "2016-07-02 18:39:57"
+        },
+        {
+            "name": "vundb/ansible-role-system-bootstrap",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vundb/ansible-role-system-bootstrap.git",
+                "reference": "0c3662d977cd011948ad6bbbe6f9a57f18ad70ee"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vundb/ansible-role-system-bootstrap/zipball/0c3662d977cd011948ad6bbbe6f9a57f18ad70ee",
+                "reference": "0c3662d977cd011948ad6bbbe6f9a57f18ad70ee",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "chef-role",
+            "extra": {
+                "installer-name": "system-bootstrap"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Viktor Breitenbuecher",
+                    "email": "vic.b@outlook.com"
+                }
+            ],
+            "description": "Ansible role for bootstraping instances.",
+            "time": "2016-06-25 22:39:19"
+        },
+        {
+            "name": "vundb/ansible-role-system-hostname",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vundb/ansible-role-system-hostname.git",
+                "reference": "3326673532c377bbb6e77c9f9fd1bf8ccabce833"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vundb/ansible-role-system-hostname/zipball/3326673532c377bbb6e77c9f9fd1bf8ccabce833",
+                "reference": "3326673532c377bbb6e77c9f9fd1bf8ccabce833",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "chef-role",
+            "extra": {
+                "installer-name": "system-hostname"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Viktor Breitenbuecher",
+                    "email": "vic.b@outlook.com"
+                }
+            ],
+            "description": "Ansible role to configure the hostname on gentoo instances.",
+            "time": "2016-06-25 22:31:21"
+        },
+        {
+            "name": "vundb/ansible-role-system-timezone",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vundb/ansible-role-system-timezone.git",
+                "reference": "c067c10f2a0c523e59ef189aa03e424b5c0e8adc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vundb/ansible-role-system-timezone/zipball/c067c10f2a0c523e59ef189aa03e424b5c0e8adc",
+                "reference": "c067c10f2a0c523e59ef189aa03e424b5c0e8adc",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "chef-role",
+            "extra": {
+                "installer-name": "system-timezone"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Viktor Breitenbuecher",
+                    "email": "vic.b@outlook.com"
+                }
+            ],
+            "description": "Ansible role to configure the timezone on gentoo instances.",
+            "time": "2016-06-25 22:03:10"
+        }
+    ],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
