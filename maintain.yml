@@ -1,0 +1,10 @@
+---
+
+- hosts: all
+  pre_tasks:
+    - name: create application directories
+      file: path="/var/www/{{ item }}" state="directory" owner="{{ apache_user }}" group="{{ apache_group }}"
+      with_items:
+        - koken
+  roles:
+    - role: apache-vhost

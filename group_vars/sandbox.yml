@@ -1,0 +1,13 @@
+apache_user: "vagrant"
+apache_group: "vagrant"
+apache_vhosts:
+  - label: "cms"
+    virtual_host: "*:80"
+    server_name: "cms.candbox.local"
+    server_alias: "cms.sandbox.local"
+    document_root: "/var/www/"
+
+mysql_databases:
+  - { name: "koken" }
+mysql_users:
+  - { name: "koken", pass: "koken", priv: "koken.*:ALL" }

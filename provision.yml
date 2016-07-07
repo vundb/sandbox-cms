@@ -1,0 +1,14 @@
+---
+
+- hosts: all
+  roles:
+    - role: system-bootstrap
+    - role: system-hostname
+    - role: system-timezone
+    - role: apache
+      apache_opts: ["PHP"]
+    - role: php
+      php_extensions: ["apache2"]
+    - role: mysql
+    - role: mysql-admin
+    - role: apache-vhost

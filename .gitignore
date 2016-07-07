@@ -1,3 +1,5 @@
 /.idea/
+/.vagrant/
 /ansible-roles/
 /vendor/
+/*.retry
