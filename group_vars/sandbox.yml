@@ -1,13 +1,28 @@
 apache_user: "vagrant"
 apache_group: "vagrant"
 apache_vhosts:
-  - label: "cms"
+  - label: "cms-koken"
     virtual_host: "*:80"
-    server_name: "cms.candbox.local"
-    server_alias: "cms.sandbox.local"
-    document_root: "/var/www/"
+    server_name: "koken-cms.sandbox.local"
+    server_alias: "koken-cms.sandbox.local"
+    document_root: "/var/www/cms-koken"
+  - label: "cms-craft"
+    virtual_host: "*:80"
+    server_name: "craft-cms.sandbox.local"
+    server_alias: "craft-cms.sandbox.local"
+    document_root: "/var/www/cms-craft/public"
+  - label: "cms-anchor"
+    virtual_host: "*:80"
+    server_name: "anchor-cms.sandbox.local"
+    server_alias: "anchor-cms.sandbox.local"
+    document_root: "/var/www/cms-anchor"
 
 mysql_databases:
   - { name: "koken" }
+  - { name: "craft" }
+  - { name: "anchor" }
 mysql_users:
+  - { name: "admin", pass: "admin", priv: "*.*:ALL" }
   - { name: "koken", pass: "koken", priv: "koken.*:ALL" }
+  - { name: "craft", pass: "craft", priv: "craft.*:ALL" }
+  - { name: "anchor", pass: "anchor", priv: "anchor.*:ALL" }

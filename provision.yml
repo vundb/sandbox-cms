@@ -10,5 +10,3 @@
     - role: php
       php_extensions: ["apache2"]
     - role: mysql
-    - role: mysql-admin
-    - role: apache-vhost

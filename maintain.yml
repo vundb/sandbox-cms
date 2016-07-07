@@ -5,6 +5,9 @@
     - name: create application directories
       file: path="/var/www/{{ item }}" state="directory" owner="{{ apache_user }}" group="{{ apache_group }}"
       with_items:
-        - koken
+        - cms-koken
+        - cms-craft/public
+        - cms-anchor
   roles:
     - role: apache-vhost
+    - role: mysql-admin
