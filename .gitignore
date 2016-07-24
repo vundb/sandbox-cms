@@ -1,5 +1,7 @@
 /.idea/
 /.vagrant/
 /ansible-roles/
+/cms-koken/storage/cache/*
+/cms-koken/storage/originals/*
 /vendor/
 /*.retry
