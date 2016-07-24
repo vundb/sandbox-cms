@@ -22,7 +22,7 @@ mysql_databases:
   - { name: "craft" }
   - { name: "anchor" }
 mysql_users:
-  - { name: "admin", pass: "admin", priv: "*.*:ALL" }
-  - { name: "koken", pass: "koken", priv: "koken.*:ALL" }
-  - { name: "craft", pass: "craft", priv: "craft.*:ALL" }
+  - { name: "admin",  pass: "admin",  priv: "*.*:ALL" }
+  - { name: "koken",  pass: "koken",  priv: "koken.*:ALL" }
+  - { name: "craft",  pass: "craft",  priv: "craft.*:ALL" }
   - { name: "anchor", pass: "anchor", priv: "anchor.*:ALL" }

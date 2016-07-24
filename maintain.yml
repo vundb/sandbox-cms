@@ -2,12 +2,17 @@
 
 - hosts: all
   pre_tasks:
-    - name: create application directories
-      file: path="/var/www/{{ item }}" state="directory" owner="{{ apache_user }}" group="{{ apache_group }}"
+    - name: create application symlinks
+      file:
+        src: "/vagrant/{{ item.dest }}"
+        dest: "/var/www/{{ item.path }}"
+        state: "link"
+        owner: "{{ apache_user }}"
+        group: "{{ apache_group }}"
       with_items:
-        - cms-koken
-        - cms-craft/public
-        - cms-anchor
+        - { path: "cms-koken", dest: "cms-koken" }
+        - { path: "cms-craft", dest: "cms-craft" }
+        - { path: "cms-anchor", dest: "cms-anchor" }
   roles:
     - role: apache-vhost
     - role: mysql-admin
