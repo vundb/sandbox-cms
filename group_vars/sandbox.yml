@@ -16,13 +16,20 @@ apache_vhosts:
     server_name: "anchor-cms.sandbox.local"
     server_alias: "anchor-cms.sandbox.local"
     document_root: "/var/www/cms-anchor"
+  - label: "cms-wordpress"
+    virtual_host: "*:80"
+    server_name: "wordpress-cms.sandbox.local"
+    server_alias: "wordpress-cms.sandbox.local"
+    document_root: "/var/www/cms-wordpress"
 
 mysql_databases:
   - { name: "koken" }
   - { name: "craft" }
   - { name: "anchor" }
+  - { name: "wordpress" }
 mysql_users:
-  - { name: "admin",  pass: "admin",  priv: "*.*:ALL" }
-  - { name: "koken",  pass: "koken",  priv: "koken.*:ALL" }
-  - { name: "craft",  pass: "craft",  priv: "craft.*:ALL" }
-  - { name: "anchor", pass: "anchor", priv: "anchor.*:ALL" }
+  - { name: "admin",     pass: "admin",     priv: "*.*:ALL" }
+  - { name: "koken",     pass: "koken",     priv: "koken.*:ALL" }
+  - { name: "craft",     pass: "craft",     priv: "craft.*:ALL" }
+  - { name: "anchor",    pass: "anchor",    priv: "anchor.*:ALL" }
+  - { name: "wordpress", pass: "wordpress", priv: "wordpress.*:ALL" }

@@ -10,9 +10,10 @@
         owner: "{{ apache_user }}"
         group: "{{ apache_group }}"
       with_items:
-        - { path: "cms-koken", dest: "cms-koken" }
-        - { path: "cms-craft", dest: "cms-craft" }
-        - { path: "cms-anchor", dest: "cms-anchor" }
+        - { path: "cms-koken",     dest: "cms-koken" }
+        - { path: "cms-craft",     dest: "cms-craft" }
+        - { path: "cms-anchor",    dest: "cms-anchor" }
+        - { path: "cms-wordpress", dest: "cms-wordpress" }
   roles:
     - role: apache-vhost
     - role: mysql-admin
